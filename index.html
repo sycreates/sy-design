@@ -1,0 +1,6961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+  name="description"
+  content="Portfolio of Syril Makilan — Graphic Designer focused on brand identity, campaigns, motion, illustration and digital design."
+>
+
+<meta
+  name="author"
+  content="Syril Makilan"
+>
+
+<meta
+  name="theme-color"
+  content="#f2f0ea"
+>
+
+<meta
+  property="og:title"
+  content="Syril Makilan — Graphic Designer"
+>
+
+<meta
+  property="og:description"
+  content="Selected work by Syril Makilan across branding, campaigns, motion, illustration and digital design."
+>
+
+<meta
+  property="og:type"
+  content="website"
+>
+
+<title>Syril Makilan — Graphic Designer</title>
+
+
+<style>
+
+/* =========================================================
+   SYRIL MAKILAN
+   PORTFOLIO — ORGANIZED BY DISCIPLINE
+========================================================= */
+
+:root {
+
+  --bg: #f2f0ea;
+
+  --surface: #e7e4dd;
+
+  --surface-2: #dcd8cf;
+
+  --text: #101010;
+
+  --muted: #77736c;
+
+  --line:
+    rgba(
+      16,
+      16,
+      16,
+      .15
+    );
+
+  --accent: #ff4d00;
+
+  --white: #f6f4ef;
+
+  --nav-bg:
+    rgba(
+      242,
+      240,
+      234,
+      .88
+    );
+
+  --max-width: 1550px;
+
+  --pad:
+    clamp(
+      20px,
+      4vw,
+      70px
+    );
+
+  --ease:
+    cubic-bezier(
+      .16,
+      1,
+      .3,
+      1
+    );
+
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark {
+
+  --bg: #0d0d0d;
+
+  --surface: #181818;
+
+  --surface-2: #222;
+
+  --text: #f2f0ea;
+
+  --muted: #96928b;
+
+  --line:
+    rgba(
+      255,
+      255,
+      255,
+      .15
+    );
+
+  --nav-bg:
+    rgba(
+      13,
+      13,
+      13,
+      .88
+    );
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*,
+*::before,
+*::after {
+
+  box-sizing: border-box;
+
+}
+
+
+html {
+
+  scroll-behavior: smooth;
+
+}
+
+
+body {
+
+  margin: 0;
+
+  background: var(--bg);
+
+  color: var(--text);
+
+  font-family:
+    Inter,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  overflow-x: hidden;
+
+  transition:
+    background .35s ease,
+    color .35s ease;
+
+}
+
+
+body.no-scroll {
+
+  overflow: hidden;
+
+}
+
+
+button,
+input,
+textarea,
+select {
+
+  font: inherit;
+
+}
+
+
+button {
+
+  color: inherit;
+
+}
+
+
+button,
+a {
+
+  -webkit-tap-highlight-color:
+    transparent;
+
+}
+
+
+a {
+
+  color: inherit;
+
+  text-decoration: none;
+
+}
+
+
+img,
+video {
+
+  display: block;
+
+  width: 100%;
+
+}
+
+
+h1,
+h2,
+h3,
+p {
+
+  margin: 0;
+
+}
+
+
+::selection {
+
+  background: var(--accent);
+
+  color: #fff;
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.skip-link {
+
+  position: fixed;
+
+  top: 15px;
+  left: 15px;
+
+  z-index: 20000;
+
+  padding:
+    12px
+    16px;
+
+  background: var(--text);
+
+  color: var(--bg);
+
+  transform:
+    translateY(-200%);
+
+  transition:
+    transform
+    .3s
+    ease;
+
+}
+
+
+.skip-link:focus {
+
+  transform:
+    translateY(0);
+
+}
+
+
+:focus-visible {
+
+  outline:
+    2px
+    solid
+    var(--accent);
+
+  outline-offset: 5px;
+
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.container {
+
+  width: 100%;
+
+  max-width:
+    var(--max-width);
+
+  margin:
+    0
+    auto;
+
+  padding-left:
+    var(--pad);
+
+  padding-right:
+    var(--pad);
+
+}
+
+
+.section {
+
+  padding-top:
+    clamp(
+      100px,
+      11vw,
+      180px
+    );
+
+  padding-bottom:
+    clamp(
+      100px,
+      11vw,
+      180px
+    );
+
+}
+
+
+.eyebrow {
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  line-height: 1.4;
+
+  letter-spacing: .14em;
+
+  text-transform: uppercase;
+
+}
+
+
+.muted {
+
+  color: var(--muted);
+
+}
+
+
+.accent {
+
+  color: var(--accent);
+
+}
+
+
+/* =========================================================
+   NOISE
+========================================================= */
+
+.noise {
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9998;
+
+  pointer-events: none;
+
+  opacity: .018;
+
+  background-image:
+
+    url(
+      "data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"
+    );
+
+}
+
+
+/* =========================================================
+   CURSOR
+========================================================= */
+
+.cursor {
+
+  display: none;
+
+}
+
+
+@media
+(pointer: fine)
+and
+(hover: hover) {
+
+  body.cursor-ready {
+
+    cursor: none;
+
+  }
+
+
+  body.cursor-ready
+  a,
+
+  body.cursor-ready
+  button {
+
+    cursor: none;
+
+  }
+
+
+  .cursor {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 10px;
+    height: 10px;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    z-index: 10000;
+
+    pointer-events: none;
+
+    border-radius: 100px;
+
+    background: var(--accent);
+
+    color: #fff;
+
+    opacity: 0;
+
+    transform:
+      translate(
+        -50%,
+        -50%
+      );
+
+    transition:
+      width .35s var(--ease),
+      height .35s var(--ease),
+      opacity .2s ease,
+      background .3s ease;
+
+  }
+
+
+  .cursor.visible {
+
+    opacity: 1;
+
+  }
+
+
+  .cursor.active {
+
+    width: 72px;
+    height: 72px;
+
+    background:
+      rgba(
+        255,
+        77,
+        0,
+        .16
+      );
+
+    backdrop-filter:
+      blur(4px);
+
+  }
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.site-nav {
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1000;
+
+  border-bottom:
+    1px
+    solid
+    transparent;
+
+  transition:
+    background .3s ease,
+    border-color .3s ease;
+
+}
+
+
+.site-nav.scrolled {
+
+  background: var(--nav-bg);
+
+  border-color: var(--line);
+
+  backdrop-filter:
+    blur(18px);
+
+}
+
+
+.nav-inner {
+
+  min-height: 76px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content:
+    space-between;
+
+  gap: 30px;
+
+}
+
+
+.logo {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  font-size: 27px;
+
+  font-weight: 900;
+
+  line-height: 1;
+
+  letter-spacing: -.08em;
+
+}
+
+
+.logo-dot {
+
+  color: var(--accent);
+
+}
+
+
+.nav-right {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 27px;
+
+}
+
+
+.nav-links {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 27px;
+
+}
+
+
+.nav-link {
+
+  position: relative;
+
+  padding:
+    8px
+    0;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+
+}
+
+
+.nav-link::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 2px;
+
+  width: 100%;
+  height: 1px;
+
+  background:
+    currentColor;
+
+  transform:
+    scaleX(0);
+
+  transform-origin:
+    right;
+
+  transition:
+    transform
+    .4s
+    var(--ease);
+
+}
+
+
+.nav-link:hover::after {
+
+  transform:
+    scaleX(1);
+
+  transform-origin:
+    left;
+
+}
+
+
+.resume-link {
+
+  min-height: 40px;
+
+  padding:
+    0
+    16px;
+
+  border:
+    1px
+    solid
+    var(--text);
+
+  border-radius:
+    100px;
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: .09em;
+
+  text-transform: uppercase;
+
+  transition:
+    background .25s ease,
+    color .25s ease,
+    transform .3s var(--ease);
+
+}
+
+
+.resume-link:hover {
+
+  background: var(--text);
+
+  color: var(--bg);
+
+  transform:
+    translateY(-2px);
+
+}
+
+
+.icon-button {
+
+  width: 40px;
+  height: 40px;
+
+  border:
+    1px
+    solid
+    var(--line);
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  display: grid;
+
+  place-items: center;
+
+  cursor: pointer;
+
+}
+
+
+.menu-button {
+
+  display: none;
+
+  border: 0;
+
+  background: transparent;
+
+  padding:
+    10px
+    0;
+
+  cursor: pointer;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+.mobile-menu {
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 900;
+
+  padding:
+    120px
+    var(--pad)
+    35px;
+
+  background:
+    var(--bg);
+
+  display: flex;
+
+  flex-direction:
+    column;
+
+  justify-content:
+    space-between;
+
+  visibility:
+    hidden;
+
+  transform:
+    translateY(-100%);
+
+  transition:
+    transform .7s var(--ease),
+    visibility .7s;
+
+}
+
+
+.mobile-menu.open {
+
+  visibility: visible;
+
+  transform:
+    translateY(0);
+
+}
+
+
+.mobile-links {
+
+  display: flex;
+
+  flex-direction:
+    column;
+
+}
+
+
+.mobile-links a {
+
+  padding:
+    12px
+    0;
+
+  border-bottom:
+    1px
+    solid
+    var(--line);
+
+  font-size:
+    clamp(
+      42px,
+      13vw,
+      80px
+    );
+
+  font-weight: 800;
+
+  line-height: .98;
+
+  letter-spacing: -.065em;
+
+}
+
+
+.mobile-menu-bottom {
+
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  gap: 20px;
+
+  color:
+    var(--muted);
+
+  font-size: 9px;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.button {
+
+  min-height: 50px;
+
+  padding:
+    0
+    21px;
+
+  border:
+    1px
+    solid
+    var(--text);
+
+  border-radius:
+    100px;
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap: 10px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+
+  transition:
+    background .25s ease,
+    color .25s ease,
+    transform .35s var(--ease);
+
+}
+
+
+.button:hover {
+
+  transform:
+    translateY(-3px);
+
+}
+
+
+.button-primary {
+
+  background:
+    var(--text);
+
+  color:
+    var(--bg);
+
+}
+
+
+.button-accent {
+
+  background:
+    var(--accent);
+
+  border-color:
+    var(--accent);
+
+  color: #fff;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+  min-height: 100vh;
+
+  padding-top: 135px;
+
+  padding-bottom: 60px;
+
+  display: flex;
+
+  align-items:
+    flex-end;
+
+}
+
+
+.hero-inner {
+
+  width: 100%;
+
+}
+
+
+.hero-top {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content:
+    space-between;
+
+  gap: 30px;
+
+  margin-bottom:
+    clamp(
+      50px,
+      7vw,
+      100px
+    );
+
+}
+
+
+.availability {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: .12em;
+
+  text-transform: uppercase;
+
+}
+
+
+.status-dot {
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background:
+    #3ba75a;
+
+  position: relative;
+
+}
+
+
+.status-dot::after {
+
+  content: "";
+
+  position: absolute;
+
+  inset: -5px;
+
+  border:
+    1px
+    solid
+    #3ba75a;
+
+  border-radius: 50%;
+
+  animation:
+    pulse
+    2s
+    infinite;
+
+}
+
+
+@keyframes pulse {
+
+  from {
+
+    opacity: .8;
+
+    transform:
+      scale(.6);
+
+  }
+
+  to {
+
+    opacity: 0;
+
+    transform:
+      scale(1.7);
+
+  }
+
+}
+
+
+.hero-location {
+
+  color:
+    var(--muted);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: .12em;
+
+  text-transform: uppercase;
+
+}
+
+
+.hero-name {
+
+  overflow: hidden;
+
+}
+
+
+.hero-name span {
+
+  display: block;
+
+  font-size:
+    clamp(
+      72px,
+      14vw,
+      210px
+    );
+
+  font-weight: 900;
+
+  line-height: .75;
+
+  letter-spacing: -.09em;
+
+  transform:
+    translateY(115%);
+
+  animation:
+    heroReveal
+    1.2s
+    var(--ease)
+    forwards;
+
+}
+
+
+.hero-name.secondary span {
+
+  color:
+    var(--muted);
+
+  animation-delay:
+    .07s;
+
+}
+
+
+@keyframes heroReveal {
+
+  to {
+
+    transform:
+      translateY(0);
+
+  }
+
+}
+
+
+.hero-bottom {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    2.5fr;
+
+  gap: 30px;
+
+  margin-top:
+    clamp(
+      55px,
+      7vw,
+      90px
+    );
+
+  align-items:
+    end;
+
+}
+
+
+.hero-role {
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: .13em;
+
+  text-transform: uppercase;
+
+}
+
+
+.hero-content {
+
+  display: flex;
+
+  align-items:
+    flex-end;
+
+  justify-content:
+    space-between;
+
+  gap: 60px;
+
+}
+
+
+.hero-copy {
+
+  max-width: 680px;
+
+  font-size:
+    clamp(
+      18px,
+      1.8vw,
+      27px
+    );
+
+  line-height: 1.42;
+
+  letter-spacing: -.025em;
+
+}
+
+
+.hero-copy strong {
+
+  font-weight: 700;
+
+}
+
+
+.hero-actions {
+
+  display: flex;
+
+  gap: 9px;
+
+  flex-shrink: 0;
+
+}
+
+
+/* =========================================================
+   MARQUEE
+========================================================= */
+
+.marquee {
+
+  overflow: hidden;
+
+  border-top:
+    1px
+    solid
+    var(--line);
+
+  border-bottom:
+    1px
+    solid
+    var(--line);
+
+}
+
+
+.marquee-track {
+
+  width: max-content;
+
+  display: flex;
+
+  animation:
+    marqueeMove
+    32s
+    linear
+    infinite;
+
+}
+
+
+.marquee-group {
+
+  padding:
+    18px
+    0;
+
+  white-space:
+    nowrap;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: .12em;
+
+  text-transform: uppercase;
+
+}
+
+
+.marquee-group span {
+
+  margin:
+    0
+    25px;
+
+  color:
+    var(--accent);
+
+}
+
+
+@keyframes marqueeMove {
+
+  to {
+
+    transform:
+      translateX(-50%);
+
+  }
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.intro-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    2.5fr;
+
+  gap: 30px;
+
+}
+
+
+.intro-heading {
+
+  max-width: 1200px;
+
+  font-size:
+    clamp(
+      43px,
+      6.2vw,
+      94px
+    );
+
+  font-weight: 500;
+
+  line-height: .99;
+
+  letter-spacing: -.06em;
+
+}
+
+
+.intro-heading span {
+
+  color:
+    var(--muted);
+
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.section-header {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    2.5fr;
+
+  gap: 30px;
+
+  margin-bottom:
+    clamp(
+      60px,
+      8vw,
+      110px
+    );
+
+}
+
+
+.section-title {
+
+  font-size:
+    clamp(
+      48px,
+      7vw,
+      105px
+    );
+
+  font-weight: 800;
+
+  line-height: .9;
+
+  letter-spacing: -.07em;
+
+}
+
+
+/* =========================================================
+   DISCIPLINES
+========================================================= */
+
+.disciplines {
+
+  border-top:
+    1px
+    solid
+    var(--line);
+
+}
+
+
+.discipline-row {
+
+  width: 100%;
+
+  position: relative;
+
+  padding:
+    clamp(
+      32px,
+      4vw,
+      55px
+    )
+    0;
+
+  border: 0;
+
+  border-bottom:
+    1px
+    solid
+    var(--line);
+
+  background:
+    transparent;
+
+  display: grid;
+
+  grid-template-columns:
+    .55fr
+    2.1fr
+    1.15fr
+    .2fr;
+
+  gap: 25px;
+
+  align-items:
+    center;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+}
+
+
+.discipline-row::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  z-index: -1;
+
+  background:
+    var(--text);
+
+  transform:
+    translateY(101%);
+
+  transition:
+    transform
+    .55s
+    var(--ease);
+
+}
+
+
+.discipline-row:hover::before,
+.discipline-row:focus-visible::before {
+
+  transform:
+    translateY(0);
+
+}
+
+
+.discipline-row:hover,
+.discipline-row:focus-visible {
+
+  color:
+    var(--bg);
+
+}
+
+
+.discipline-number {
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: .1em;
+
+}
+
+
+.discipline-name {
+
+  font-size:
+    clamp(
+      39px,
+      5.8vw,
+      88px
+    );
+
+  font-weight: 800;
+
+  line-height: .9;
+
+  letter-spacing: -.065em;
+
+}
+
+
+.discipline-description {
+
+  color:
+    var(--muted);
+
+  font-size: 10px;
+
+  line-height: 1.8;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+
+  transition:
+    color
+    .3s
+    ease;
+
+}
+
+
+.discipline-row:hover
+.discipline-description,
+
+.discipline-row:focus-visible
+.discipline-description {
+
+  color:
+    rgba(
+      242,
+      240,
+      234,
+      .65
+    );
+
+}
+
+
+.discipline-arrow {
+
+  text-align: right;
+
+  font-size: 24px;
+
+  transition:
+    transform
+    .45s
+    var(--ease);
+
+}
+
+
+.discipline-row:hover
+.discipline-arrow {
+
+  transform:
+    translate(
+      5px,
+      -5px
+    );
+
+}
+
+
+/* =========================================================
+   FLOATING DISCIPLINE PREVIEW
+========================================================= */
+
+.discipline-preview {
+
+  width:
+    clamp(
+      240px,
+      26vw,
+      410px
+    );
+
+  aspect-ratio:
+    4 / 3;
+
+  position: fixed;
+
+  z-index: 800;
+
+  top: 0;
+  left: 0;
+
+  pointer-events: none;
+
+  overflow: hidden;
+
+  opacity: 0;
+
+  transform:
+    translate(
+      -50%,
+      -50%
+    )
+    scale(.85)
+    rotate(-2deg);
+
+  transition:
+    opacity .25s ease,
+    transform .4s var(--ease);
+
+  box-shadow:
+    0
+    30px
+    80px
+    rgba(
+      0,
+      0,
+      0,
+      .2
+    );
+
+}
+
+
+.discipline-preview.visible {
+
+  opacity: 1;
+
+  transform:
+    translate(
+      -50%,
+      -50%
+    )
+    scale(1)
+    rotate(-2deg);
+
+}
+
+
+.preview-art {
+
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+}
+
+
+.preview-branding {
+
+  background:
+    #111;
+
+  color:
+    #f3f0e9;
+
+}
+
+
+.preview-branding::before {
+
+  content: "Aa";
+
+  font-size:
+    clamp(
+      85px,
+      11vw,
+      170px
+    );
+
+  font-weight: 900;
+
+  letter-spacing: -.1em;
+
+}
+
+
+.preview-branding::after {
+
+  content:
+    "IDENTITY";
+
+  position: absolute;
+
+  left: 8%;
+  bottom: 8%;
+
+  color:
+    #ff4d00;
+
+  font-size: 9px;
+
+  letter-spacing: .2em;
+
+}
+
+
+.preview-campaign {
+
+  background:
+    #ff4d00;
+
+  color:
+    #111;
+
+}
+
+
+.preview-campaign::before {
+
+  content: "XV";
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(
+      100px,
+      15vw,
+      220px
+    );
+
+}
+
+
+.preview-campaign::after {
+
+  content: "CAMPAIGN";
+
+  position: absolute;
+
+  top: 8%;
+  right: 8%;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: .18em;
+
+}
+
+
+.preview-motion {
+
+  background:
+    #3c25eb;
+
+  color:
+    #fff;
+
+}
+
+
+.preview-motion::before {
+
+  content: "MOVE";
+
+  font-size:
+    clamp(
+      70px,
+      10vw,
+      155px
+    );
+
+  font-weight: 900;
+
+  letter-spacing: -.1em;
+
+  transform:
+    rotate(-7deg);
+
+}
+
+
+.preview-motion::after {
+
+  content: "LIVE / TYPE / MOTION";
+
+  position: absolute;
+
+  left: 7%;
+  bottom: 8%;
+
+  font-size: 8px;
+
+  letter-spacing: .18em;
+
+}
+
+
+.preview-illustration {
+
+  background:
+    #aa9b82;
+
+  color:
+    #171717;
+
+}
+
+
+.preview-illustration::before {
+
+  content: "";
+
+  width: 43%;
+
+  aspect-ratio: 1;
+
+  border:
+    2px
+    solid
+    #171717;
+
+  border-radius: 50%;
+
+}
+
+
+.preview-illustration::after {
+
+  content: "DRAW";
+
+  position: absolute;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(
+      70px,
+      10vw,
+      150px
+    );
+
+  font-style: italic;
+
+}
+
+
+.preview-digital {
+
+  background:
+    #cbd4cb;
+
+  color:
+    #111;
+
+}
+
+
+.preview-digital::before {
+
+  content: "</>";
+
+  font-family:
+    monospace;
+
+  font-size:
+    clamp(
+      75px,
+      11vw,
+      170px
+    );
+
+  font-weight: 800;
+
+}
+
+
+.preview-digital::after {
+
+  content: "WEB / INTERACTIVE";
+
+  position: absolute;
+
+  left: 8%;
+  bottom: 8%;
+
+  font-size: 8px;
+
+  letter-spacing: .18em;
+
+}
+
+
+/* =========================================================
+   WORK ARCHIVE
+========================================================= */
+
+.work-section {
+
+  background:
+    #151515;
+
+  color:
+    #f3f0e9;
+
+}
+
+
+.work-section
+.muted {
+
+  color: #929292;
+
+}
+
+
+.filters {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom:
+    clamp(
+      45px,
+      6vw,
+      75px
+    );
+
+}
+
+
+.filter {
+
+  min-height: 38px;
+
+  padding:
+    0
+    15px;
+
+  border:
+    1px
+    solid
+    rgba(
+      255,
+      255,
+      255,
+      .22
+    );
+
+  border-radius:
+    100px;
+
+  background:
+    transparent;
+
+  color:
+    #aaa;
+
+  cursor: pointer;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+
+  transition:
+    background .25s ease,
+    color .25s ease,
+    border-color .25s ease;
+
+}
+
+
+.filter:hover,
+.filter.active {
+
+  background:
+    #f3f0e9;
+
+  border-color:
+    #f3f0e9;
+
+  color:
+    #111;
+
+}
+
+
+.work-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      12,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    clamp(
+      50px,
+      7vw,
+      100px
+    )
+    20px;
+
+}
+
+
+.work-card {
+
+  grid-column:
+    span
+    6;
+
+  transition:
+    opacity .4s ease,
+    transform .5s var(--ease);
+
+}
+
+
+.work-card:nth-child(3n + 1) {
+
+  grid-column:
+    span
+    7;
+
+}
+
+
+.work-card:nth-child(3n + 2) {
+
+  grid-column:
+    8 / span 5;
+
+  margin-top:
+    clamp(
+      80px,
+      10vw,
+      150px
+    );
+
+}
+
+
+.work-card.hidden {
+
+  display: none;
+
+}
+
+
+.work-card-button {
+
+  width: 100%;
+
+  padding: 0;
+
+  border: 0;
+
+  background:
+    transparent;
+
+  color: inherit;
+
+  text-align: left;
+
+  cursor: pointer;
+
+}
+
+
+.work-image {
+
+  width: 100%;
+
+  aspect-ratio:
+    4 / 3;
+
+  position: relative;
+
+  overflow: hidden;
+
+  margin-bottom: 20px;
+
+  background:
+    #242424;
+
+}
+
+
+.work-art {
+
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  transition:
+    transform
+    1s
+    var(--ease);
+
+}
+
+
+.work-card-button:hover
+.work-art {
+
+  transform:
+    scale(1.035);
+
+}
+
+
+.work-view {
+
+  width: 90px;
+  height: 90px;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background:
+    #f2f0ea;
+
+  color:
+    #111;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+
+  opacity: 0;
+
+  transform:
+    translate(
+      -50%,
+      -50%
+    )
+    scale(.7);
+
+  transition:
+    opacity .3s ease,
+    transform .45s var(--ease);
+
+}
+
+
+.work-card-button:hover
+.work-view,
+
+.work-card-button:focus-visible
+.work-view {
+
+  opacity: 1;
+
+  transform:
+    translate(
+      -50%,
+      -50%
+    )
+    scale(1);
+
+}
+
+
+.work-info {
+
+  display: flex;
+
+  align-items:
+    flex-start;
+
+  justify-content:
+    space-between;
+
+  gap: 20px;
+
+}
+
+
+.work-name {
+
+  font-size:
+    clamp(
+      22px,
+      2.5vw,
+      38px
+    );
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  letter-spacing: -.04em;
+
+}
+
+
+.work-category {
+
+  margin-top: 8px;
+
+  color: #8e8e8e;
+
+  font-size: 9px;
+
+  line-height: 1.6;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+
+}
+
+
+.work-year {
+
+  color: #8e8e8e;
+
+  font-size: 9px;
+
+}
+
+
+/* =========================================================
+   WORK ART
+========================================================= */
+
+.art-fhm {
+
+  background:
+    #101010;
+
+  color:
+    #f3f0e9;
+
+}
+
+
+.art-fhm::before {
+
+  content: "F&H";
+
+  font-size:
+    clamp(
+      85px,
+      18vw,
+      270px
+    );
+
+  font-weight: 900;
+
+  letter-spacing: -.12em;
+
+}
+
+
+.art-fhm::after {
+
+  content:
+    "FAITH & HOPE MOVERS";
+
+  position: absolute;
+
+  left: 7%;
+  bottom: 7%;
+
+  color:
+    #ff4d00;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .2em;
+
+}
+
+
+.art-elevate {
+
+  background:
+    #d6d0c4;
+
+  color:
+    #171717;
+
+}
+
+
+.art-elevate::before {
+
+  content: "XV";
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(
+      130px,
+      25vw,
+      390px
+    );
+
+  opacity: .15;
+
+}
+
+
+.art-elevate::after {
+
+  content: "ELEVATE";
+
+  position: absolute;
+
+  font-size:
+    clamp(
+      55px,
+      10vw,
+      155px
+    );
+
+  font-weight: 900;
+
+  letter-spacing: -.08em;
+
+}
+
+
+.art-motion {
+
+  background:
+    #3b25e7;
+
+  color:
+    #fff;
+
+}
+
+
+.art-motion::before {
+
+  content: "ALIVE";
+
+  font-size:
+    clamp(
+      65px,
+      13vw,
+      190px
+    );
+
+  font-weight: 900;
+
+  letter-spacing: -.1em;
+
+  transform:
+    rotate(-6deg);
+
+}
+
+
+.art-motion::after {
+
+  content:
+    "KINETIC TYPOGRAPHY";
+
+  position: absolute;
+
+  left: 7%;
+  bottom: 7%;
+
+  font-size: 8px;
+
+  letter-spacing: .2em;
+
+}
+
+
+.art-portgear {
+
+  background:
+    #cbd4cb;
+
+  color:
+    #111;
+
+}
+
+
+.art-portgear::before {
+
+  content:
+    "PORTGEAR";
+
+  font-size:
+    clamp(
+      52px,
+      9vw,
+      140px
+    );
+
+  font-weight: 900;
+
+  letter-spacing: -.08em;
+
+}
+
+
+.art-portgear::after {
+
+  content:
+    "TRAVEL / LUGGAGE";
+
+  position: absolute;
+
+  right: 7%;
+  top: 8%;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .18em;
+
+}
+
+
+.art-comic {
+
+  background:
+    #aa9b82;
+
+  color:
+    #171717;
+
+}
+
+
+.art-comic::before {
+
+  content: "";
+
+  width: 37%;
+
+  aspect-ratio: 1;
+
+  border:
+    2px
+    solid
+    #171717;
+
+  border-radius: 50%;
+
+}
+
+
+.art-comic::after {
+
+  content: "STORIES";
+
+  position: absolute;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(
+      55px,
+      9vw,
+      140px
+    );
+
+  font-style: italic;
+
+}
+
+
+.art-jolh {
+
+  background:
+    #ff4d00;
+
+  color:
+    #111;
+
+}
+
+
+.art-jolh::before {
+
+  content: "JOLH";
+
+  font-size:
+    clamp(
+      80px,
+      15vw,
+      220px
+    );
+
+  font-weight: 900;
+
+  letter-spacing: -.1em;
+
+}
+
+
+.art-controller {
+
+  background:
+    #1a1a1a;
+
+  color:
+    #eee;
+
+}
+
+
+.art-controller::before {
+
+  content: "RGEN";
+
+  font-size:
+    clamp(
+      75px,
+      13vw,
+      200px
+    );
+
+  font-weight: 900;
+
+  letter-spacing: -.09em;
+
+}
+
+
+.art-controller::after {
+
+  content:
+    "LIVE VISUAL CONTROLLER";
+
+  position: absolute;
+
+  left: 7%;
+  bottom: 7%;
+
+  color:
+    #ff4d00;
+
+  font-size: 8px;
+
+  letter-spacing: .18em;
+
+}
+
+
+/* =========================================================
+   EXPERIENCE
+========================================================= */
+
+.experience-list {
+
+  border-top:
+    1px
+    solid
+    var(--line);
+
+}
+
+
+.experience-row {
+
+  display: grid;
+
+  grid-template-columns:
+    .7fr
+    1.25fr
+    1.7fr;
+
+  gap: 40px;
+
+  padding:
+    clamp(
+      30px,
+      4vw,
+      50px
+    )
+    0;
+
+  border-bottom:
+    1px
+    solid
+    var(--line);
+
+}
+
+
+.experience-date {
+
+  color:
+    var(--muted);
+
+  font-size: 9px;
+
+  line-height: 1.7;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+
+}
+
+
+.experience-role {
+
+  font-size:
+    clamp(
+      26px,
+      3vw,
+      44px
+    );
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  letter-spacing: -.04em;
+
+}
+
+
+.experience-company {
+
+  margin-top: 10px;
+
+  color:
+    var(--muted);
+
+  font-size: 9px;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+
+}
+
+
+.experience-copy {
+
+  max-width: 620px;
+
+  color:
+    var(--muted);
+
+  font-size: 14px;
+
+  line-height: 1.75;
+
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-section {
+
+  background:
+    var(--surface);
+
+}
+
+
+.about-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    2.5fr;
+
+  gap: 30px;
+
+}
+
+
+.about-heading {
+
+  max-width: 1100px;
+
+  font-size:
+    clamp(
+      42px,
+      5.8vw,
+      88px
+    );
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  letter-spacing: -.055em;
+
+}
+
+
+.about-heading span {
+
+  color:
+    var(--muted);
+
+}
+
+
+.about-bottom {
+
+  margin-top:
+    clamp(
+      55px,
+      7vw,
+      90px
+    );
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 80px;
+
+}
+
+
+.about-copy {
+
+  max-width: 520px;
+
+  color:
+    var(--muted);
+
+  font-size: 15px;
+
+  line-height: 1.75;
+
+}
+
+
+.about-info {
+
+  border-top:
+    1px
+    solid
+    var(--line);
+
+}
+
+
+.about-row {
+
+  display: grid;
+
+  grid-template-columns:
+    .8fr
+    1.3fr;
+
+  gap: 20px;
+
+  padding:
+    15px
+    0;
+
+  border-bottom:
+    1px
+    solid
+    var(--line);
+
+  font-size: 9px;
+
+  line-height: 1.5;
+
+  letter-spacing: .09em;
+
+  text-transform: uppercase;
+
+}
+
+
+.about-row span:last-child {
+
+  color:
+    var(--muted);
+
+}
+
+
+.capabilities {
+
+  margin-top: 65px;
+
+  padding-top: 35px;
+
+  border-top:
+    1px
+    solid
+    var(--line);
+
+}
+
+
+.capability-list {
+
+  margin-top: 25px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+}
+
+
+.capability {
+
+  padding:
+    10px
+    15px;
+
+  border:
+    1px
+    solid
+    var(--line);
+
+  border-radius:
+    100px;
+
+  font-size: 9px;
+
+  letter-spacing: .08em;
+
+  text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact {
+
+  min-height: 90vh;
+
+  display: flex;
+
+  align-items:
+    flex-end;
+
+}
+
+
+.contact-copy {
+
+  max-width: 700px;
+
+  margin-top: 25px;
+
+  color:
+    var(--muted);
+
+  font-size:
+    clamp(
+      18px,
+      1.8vw,
+      27px
+    );
+
+  line-height: 1.45;
+
+  letter-spacing: -.02em;
+
+}
+
+
+.contact-title {
+
+  margin-top: 60px;
+
+  font-size:
+    clamp(
+      65px,
+      13vw,
+      195px
+    );
+
+  font-weight: 900;
+
+  line-height: .76;
+
+  letter-spacing: -.09em;
+
+}
+
+
+.contact-outline {
+
+  color:
+    transparent;
+
+  -webkit-text-stroke:
+    1px
+    var(--text);
+
+}
+
+
+.contact-actions {
+
+  margin-top: 65px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+
+  padding:
+    30px
+    0;
+
+  border-top:
+    1px
+    solid
+    var(--line);
+
+}
+
+
+.footer-inner {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr
+    1fr;
+
+  gap: 20px;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+
+}
+
+
+.footer-center {
+
+  text-align: center;
+
+}
+
+
+.footer-right {
+
+  display: flex;
+
+  justify-content:
+    flex-end;
+
+  gap: 20px;
+
+}
+
+
+/* =========================================================
+   CASE STUDY
+========================================================= */
+
+.case-modal {
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 5000;
+
+  overflow-y: auto;
+
+  background:
+    var(--bg);
+
+  visibility:
+    hidden;
+
+  transform:
+    translateY(100%);
+
+  transition:
+    transform .8s var(--ease),
+    visibility .8s;
+
+}
+
+
+.case-modal.open {
+
+  visibility:
+    visible;
+
+  transform:
+    translateY(0);
+
+}
+
+
+.case-nav {
+
+  min-height: 76px;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 10;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content:
+    space-between;
+
+  background:
+    var(--nav-bg);
+
+  border-bottom:
+    1px
+    solid
+    var(--line);
+
+  backdrop-filter:
+    blur(18px);
+
+}
+
+
+.case-close {
+
+  border: 0;
+
+  background:
+    transparent;
+
+  cursor: pointer;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+
+}
+
+
+.case-hero {
+
+  padding-top:
+    clamp(
+      80px,
+      10vw,
+      150px
+    );
+
+  padding-bottom: 55px;
+
+}
+
+
+.case-title {
+
+  max-width: 1300px;
+
+  margin-top: 20px;
+
+  font-size:
+    clamp(
+      60px,
+      10vw,
+      155px
+    );
+
+  font-weight: 900;
+
+  line-height: .82;
+
+  letter-spacing: -.075em;
+
+}
+
+
+.case-meta {
+
+  margin-top: 65px;
+
+  padding-top: 18px;
+
+  border-top:
+    1px
+    solid
+    var(--line);
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      4,
+      1fr
+    );
+
+  gap: 30px;
+
+}
+
+
+.case-meta-item {
+
+  font-size: 9px;
+
+  line-height: 1.7;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+
+}
+
+
+.case-meta-item span {
+
+  color:
+    var(--muted);
+
+}
+
+
+.case-cover {
+
+  height:
+    min(
+      72vw,
+      850px
+    );
+
+  max-height:
+    850px;
+
+  overflow: hidden;
+
+}
+
+
+.case-content {
+
+  padding-top:
+    clamp(
+      90px,
+      10vw,
+      140px
+    );
+
+  padding-bottom:
+    clamp(
+      100px,
+      12vw,
+      170px
+    );
+
+}
+
+
+.case-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    2.5fr;
+
+  gap: 30px;
+
+}
+
+
+.case-overview {
+
+  max-width: 1000px;
+
+  font-size:
+    clamp(
+      26px,
+      3.6vw,
+      53px
+    );
+
+  line-height: 1.18;
+
+  letter-spacing: -.04em;
+
+}
+
+
+.case-columns {
+
+  margin-top: 75px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 60px;
+
+}
+
+
+.case-block h3 {
+
+  margin-bottom: 15px;
+
+  font-size: 10px;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+
+}
+
+
+.case-block p {
+
+  color:
+    var(--muted);
+
+  font-size: 14px;
+
+  line-height: 1.75;
+
+}
+
+
+.case-gallery {
+
+  margin-top:
+    clamp(
+      90px,
+      10vw,
+      140px
+    );
+
+}
+
+
+.gallery-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap: 20px;
+
+}
+
+
+.gallery-placeholder {
+
+  aspect-ratio:
+    4 / 3;
+
+  background:
+    var(--surface);
+
+  display: grid;
+
+  place-items: center;
+
+  color:
+    var(--muted);
+
+  text-align: center;
+
+  font-size: 9px;
+
+  line-height: 1.6;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+
+}
+
+
+.gallery-placeholder.wide {
+
+  grid-column:
+    1 / -1;
+
+  aspect-ratio:
+    16 / 8;
+
+}
+
+
+/* =========================================================
+   REVEALS
+========================================================= */
+
+.reveal {
+
+  opacity: 0;
+
+  transform:
+    translateY(40px);
+
+  transition:
+    opacity .85s var(--ease),
+    transform .85s var(--ease);
+
+}
+
+
+.reveal.visible {
+
+  opacity: 1;
+
+  transform:
+    translateY(0);
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media
+(max-width: 1000px) {
+
+  .nav-links,
+  .nav-resume {
+
+    display: none;
+
+  }
+
+
+  .menu-button {
+
+    display: block;
+
+  }
+
+
+  .hero-bottom,
+  .intro-grid,
+  .section-header,
+  .about-grid,
+  .case-grid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .hero-content {
+
+    display: block;
+
+  }
+
+
+  .hero-actions {
+
+    margin-top: 35px;
+
+  }
+
+
+  .discipline-row {
+
+    grid-template-columns:
+      .4fr
+      2fr
+      1fr
+      .2fr;
+
+  }
+
+
+  .discipline-preview {
+
+    display: none;
+
+  }
+
+
+  .work-card,
+  .work-card:nth-child(3n + 1),
+  .work-card:nth-child(3n + 2) {
+
+    grid-column:
+      span
+      6;
+
+    margin-top: 0;
+
+  }
+
+
+  .experience-row {
+
+    grid-template-columns:
+      .7fr
+      1.3fr;
+
+  }
+
+
+  .experience-copy {
+
+    grid-column: 2;
+
+  }
+
+
+  .case-meta {
+
+    grid-template-columns:
+      repeat(
+        2,
+        1fr
+      );
+
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media
+(max-width: 700px) {
+
+  .nav-inner {
+
+    min-height: 68px;
+
+  }
+
+
+  .hero {
+
+    min-height: auto;
+
+    padding-top: 120px;
+
+    padding-bottom: 75px;
+
+  }
+
+
+  .hero-top {
+
+    display: block;
+
+    margin-bottom: 55px;
+
+  }
+
+
+  .hero-location {
+
+    margin-top: 12px;
+
+  }
+
+
+  .hero-name span {
+
+    font-size:
+      clamp(
+        64px,
+        19vw,
+        110px
+      );
+
+    line-height: .8;
+
+  }
+
+
+  .hero-bottom {
+
+    margin-top: 45px;
+
+  }
+
+
+  .hero-role {
+
+    margin-bottom: 20px;
+
+  }
+
+
+  .hero-copy {
+
+    font-size: 17px;
+
+  }
+
+
+  .hero-actions {
+
+    display: grid;
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .button {
+
+    width: 100%;
+
+  }
+
+
+  .section {
+
+    padding-top: 90px;
+
+    padding-bottom: 90px;
+
+  }
+
+
+  .discipline-row {
+
+    grid-template-columns:
+      1fr
+      auto;
+
+    gap: 15px;
+
+  }
+
+
+  .discipline-number {
+
+    grid-column:
+      1 / -1;
+
+  }
+
+
+  .discipline-description {
+
+    grid-column:
+      1 / -1;
+
+    grid-row: 3;
+
+  }
+
+
+  .discipline-arrow {
+
+    grid-column: 2;
+
+    grid-row: 2;
+
+  }
+
+
+  .work-grid {
+
+    display: block;
+
+  }
+
+
+  .work-card,
+  .work-card:nth-child(3n + 1),
+  .work-card:nth-child(3n + 2) {
+
+    margin:
+      0
+      0
+      75px;
+
+  }
+
+
+  .experience-row {
+
+    grid-template-columns:
+      1fr;
+
+    gap: 15px;
+
+  }
+
+
+  .experience-copy {
+
+    grid-column: 1;
+
+  }
+
+
+  .about-bottom {
+
+    grid-template-columns:
+      1fr;
+
+    gap: 50px;
+
+  }
+
+
+  .case-meta {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .case-columns {
+
+    grid-template-columns:
+      1fr;
+
+    gap: 45px;
+
+  }
+
+
+  .gallery-grid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .gallery-placeholder.wide {
+
+    grid-column: auto;
+
+    aspect-ratio:
+      4 / 3;
+
+  }
+
+
+  .footer-inner {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .footer-center {
+
+    text-align: left;
+
+  }
+
+
+  .footer-right {
+
+    justify-content:
+      flex-start;
+
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media
+(prefers-reduced-motion: reduce) {
+
+  html {
+
+    scroll-behavior: auto;
+
+  }
+
+
+  *,
+  *::before,
+  *::after {
+
+    animation-duration:
+      .01ms !important;
+
+    animation-iteration-count:
+      1 !important;
+
+    transition-duration:
+      .01ms !important;
+
+  }
+
+
+  .hero-name span {
+
+    transform: none;
+
+  }
+
+
+  .reveal {
+
+    opacity: 1;
+
+    transform: none;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<a
+  href="#main"
+  class="skip-link"
+>
+  Skip to content
+</a>
+
+
+<div
+  class="noise"
+  aria-hidden="true"
+></div>
+
+
+<div
+  class="cursor"
+  id="cursor"
+  aria-hidden="true"
+></div>
+
+
+<!-- ======================================================
+     NAVIGATION
+====================================================== -->
+
+<nav
+  class="site-nav"
+  id="navbar"
+  aria-label="Main navigation"
+>
+
+<div class="container nav-inner">
+
+
+  <a
+    href="#home"
+    class="logo"
+    aria-label="Syril Makilan home"
+  >
+
+    SY<span class="logo-dot">.</span>
+
+  </a>
+
+
+  <div class="nav-right">
+
+
+    <div class="nav-links">
+
+      <a
+        href="#work"
+        class="nav-link"
+      >
+        Work
+      </a>
+
+
+      <a
+        href="#expertise"
+        class="nav-link"
+      >
+        Expertise
+      </a>
+
+
+      <a
+        href="#about"
+        class="nav-link"
+      >
+        About
+      </a>
+
+
+      <a
+        href="#contact"
+        class="nav-link"
+      >
+        Contact
+      </a>
+
+    </div>
+
+
+    <a
+      href="resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="resume-link nav-resume"
+    >
+      Résumé ↗
+    </a>
+
+
+    <button
+      class="icon-button"
+      id="themeButton"
+      type="button"
+      aria-label="Switch theme"
+    >
+      ◐
+    </button>
+
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobileMenu"
+    >
+      Menu
+    </button>
+
+  </div>
+
+</div>
+
+</nav>
+
+
+<!-- ======================================================
+     MOBILE MENU
+====================================================== -->
+
+<div
+  class="mobile-menu"
+  id="mobileMenu"
+  aria-hidden="true"
+>
+
+
+  <div class="mobile-links">
+
+    <a href="#work">
+      Work
+    </a>
+
+    <a href="#expertise">
+      Expertise
+    </a>
+
+    <a href="#about">
+      About
+    </a>
+
+    <a href="#contact">
+      Contact
+    </a>
+
+  </div>
+
+
+  <div class="mobile-menu-bottom">
+
+    <span>
+      Syril Makilan
+    </span>
+
+    <span>
+      Graphic Designer
+    </span>
+
+  </div>
+
+</div>
+
+
+<main id="main">
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section
+  class="hero"
+  id="home"
+>
+
+<div class="container hero-inner">
+
+
+  <div class="hero-top">
+
+
+    <div class="availability">
+
+      <span
+        class="status-dot"
+        aria-hidden="true"
+      ></span>
+
+      Open to graphic design opportunities
+
+    </div>
+
+
+    <div class="hero-location">
+
+      Philippines /
+      Portfolio 2026
+
+    </div>
+
+  </div>
+
+
+  <h1>
+
+
+    <div class="hero-name">
+
+      <span>
+        SYRIL
+      </span>
+
+    </div>
+
+
+    <div class="hero-name secondary">
+
+      <span>
+
+        MAKILAN<span class="accent">.</span>
+
+      </span>
+
+    </div>
+
+  </h1>
+
+
+  <div class="hero-bottom">
+
+
+    <div class="hero-role">
+
+      Graphic Designer
+
+    </div>
+
+
+    <div class="hero-content">
+
+
+      <p class="hero-copy">
+
+        I create
+        <strong>
+          visual identities, campaigns,
+          motion and digital experiences
+        </strong>
+        that turn ideas into clear,
+        engaging visual communication.
+
+      </p>
+
+
+      <div class="hero-actions">
+
+        <a
+          href="#expertise"
+          class="button button-primary"
+        >
+          Explore my work ↓
+        </a>
+
+
+        <a
+          href="resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button"
+        >
+          Résumé ↗
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     MARQUEE
+====================================================== -->
+
+<div class="marquee">
+
+<div class="marquee-track">
+
+
+  <div class="marquee-group">
+
+    Brand Identity
+    <span>✦</span>
+
+    Campaign Design
+    <span>✦</span>
+
+    Motion
+    <span>✦</span>
+
+    Illustration
+    <span>✦</span>
+
+    Digital Design
+    <span>✦</span>
+
+    Visual Storytelling
+    <span>✦</span>
+
+  </div>
+
+
+  <div
+    class="marquee-group"
+    aria-hidden="true"
+  >
+
+    Brand Identity
+    <span>✦</span>
+
+    Campaign Design
+    <span>✦</span>
+
+    Motion
+    <span>✦</span>
+
+    Illustration
+    <span>✦</span>
+
+    Digital Design
+    <span>✦</span>
+
+    Visual Storytelling
+    <span>✦</span>
+
+  </div>
+
+</div>
+
+</div>
+
+
+<!-- ======================================================
+     INTRO
+====================================================== -->
+
+<section class="section">
+
+<div class="container intro-grid">
+
+
+  <div class="eyebrow muted reveal">
+
+    What I Do
+
+  </div>
+
+
+  <h2 class="intro-heading reveal">
+
+    Not a feed of recent work.
+
+    <span>
+
+      A curated collection of how
+      I think, design and communicate.
+
+    </span>
+
+  </h2>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     EXPERTISE / DISCIPLINES
+====================================================== -->
+
+<section
+  class="section"
+  id="expertise"
+>
+
+<div class="container">
+
+
+  <header class="section-header">
+
+
+    <div class="eyebrow muted reveal">
+
+      01 / Expertise
+
+    </div>
+
+
+    <h2 class="section-title reveal">
+
+      Explore by<br>
+      discipline.
+
+    </h2>
+
+  </header>
+
+
+  <div class="disciplines">
+
+
+    <!-- BRANDING -->
+
+    <button
+      type="button"
+      class="discipline-row reveal"
+      data-filter-target="branding"
+      data-preview="branding"
+    >
+
+      <span class="discipline-number">
+        01
+      </span>
+
+
+      <span class="discipline-name">
+
+        BRAND<br>
+        IDENTITY
+
+      </span>
+
+
+      <span class="discipline-description">
+
+        Logos<br>
+        Identity Systems<br>
+        Brand Refresh
+
+      </span>
+
+
+      <span class="discipline-arrow">
+        ↗
+      </span>
+
+    </button>
+
+
+    <!-- CAMPAIGNS -->
+
+    <button
+      type="button"
+      class="discipline-row reveal"
+      data-filter-target="campaign"
+      data-preview="campaign"
+    >
+
+      <span class="discipline-number">
+        02
+      </span>
+
+
+      <span class="discipline-name">
+
+        CAMPAIGNS &<br>
+        MARKETING
+
+      </span>
+
+
+      <span class="discipline-description">
+
+        Posters<br>
+        Social Media<br>
+        Events / Print
+
+      </span>
+
+
+      <span class="discipline-arrow">
+        ↗
+      </span>
+
+    </button>
+
+
+    <!-- MOTION -->
+
+    <button
+      type="button"
+      class="discipline-row reveal"
+      data-filter-target="motion"
+      data-preview="motion"
+    >
+
+      <span class="discipline-number">
+        03
+      </span>
+
+
+      <span class="discipline-name">
+
+        MOTION &<br>
+        LIVE VISUALS
+
+      </span>
+
+
+      <span class="discipline-description">
+
+        Kinetic Type<br>
+        Motion Graphics<br>
+        Live Visual Systems
+
+      </span>
+
+
+      <span class="discipline-arrow">
+        ↗
+      </span>
+
+    </button>
+
+
+    <!-- ILLUSTRATION -->
+
+    <button
+      type="button"
+      class="discipline-row reveal"
+      data-filter-target="illustration"
+      data-preview="illustration"
+    >
+
+      <span class="discipline-number">
+        04
+      </span>
+
+
+      <span class="discipline-name">
+
+        ILLUSTRATION &<br>
+        DIGITAL ART
+
+      </span>
+
+
+      <span class="discipline-description">
+
+        Comics<br>
+        Digital Painting<br>
+        Visual Storytelling
+
+      </span>
+
+
+      <span class="discipline-arrow">
+        ↗
+      </span>
+
+    </button>
+
+
+    <!-- DIGITAL -->
+
+    <button
+      type="button"
+      class="discipline-row reveal"
+      data-filter-target="digital"
+      data-preview="digital"
+    >
+
+      <span class="discipline-number">
+        05
+      </span>
+
+
+      <span class="discipline-name">
+
+        WEB &<br>
+        INTERACTIVE
+
+      </span>
+
+
+      <span class="discipline-description">
+
+        Creative Development<br>
+        Interfaces<br>
+        Interactive Visuals
+
+      </span>
+
+
+      <span class="discipline-arrow">
+        ↗
+      </span>
+
+    </button>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     FLOATING PREVIEW
+====================================================== -->
+
+<div
+  class="discipline-preview"
+  id="disciplinePreview"
+  aria-hidden="true"
+>
+
+  <div
+    class="preview-art preview-branding"
+    id="previewArt"
+  ></div>
+
+</div>
+
+
+<!-- ======================================================
+     WORK ARCHIVE
+====================================================== -->
+
+<section
+  class="section work-section"
+  id="work"
+>
+
+<div class="container">
+
+
+  <header class="section-header">
+
+
+    <div class="eyebrow muted reveal">
+
+      02 / Work
+
+    </div>
+
+
+    <h2 class="section-title reveal">
+
+      Selected<br>
+      projects.
+
+    </h2>
+
+  </header>
+
+
+  <div
+    class="filters reveal"
+    role="group"
+    aria-label="Filter portfolio projects"
+  >
+
+
+    <button
+      class="filter active"
+      type="button"
+      data-filter="all"
+    >
+      All
+    </button>
+
+
+    <button
+      class="filter"
+      type="button"
+      data-filter="branding"
+    >
+      Branding
+    </button>
+
+
+    <button
+      class="filter"
+      type="button"
+      data-filter="campaign"
+    >
+      Campaigns
+    </button>
+
+
+    <button
+      class="filter"
+      type="button"
+      data-filter="motion"
+    >
+      Motion
+    </button>
+
+
+    <button
+      class="filter"
+      type="button"
+      data-filter="illustration"
+    >
+      Illustration
+    </button>
+
+
+    <button
+      class="filter"
+      type="button"
+      data-filter="digital"
+    >
+      Digital
+    </button>
+
+  </div>
+
+
+  <div class="work-grid">
+
+
+    <!-- FAITH & HOPE MOVERS -->
+
+    <article
+      class="work-card reveal"
+      data-category="branding"
+    >
+
+      <button
+        type="button"
+        class="work-card-button project-open"
+        data-project="fhm"
+        aria-haspopup="dialog"
+      >
+
+        <div class="work-image">
+
+          <div
+            class="work-art art-fhm"
+            aria-hidden="true"
+          ></div>
+
+          <span class="work-view">
+            View
+          </span>
+
+        </div>
+
+
+        <div class="work-info">
+
+          <div>
+
+            <h3 class="work-name">
+
+              Faith & Hope Movers
+
+            </h3>
+
+            <div class="work-category">
+
+              Brand Identity /
+              Logo Design
+
+            </div>
+
+          </div>
+
+
+          <span class="work-year">
+            2026
+          </span>
+
+        </div>
+
+      </button>
+
+    </article>
+
+
+    <!-- ELEVATE -->
+
+    <article
+      class="work-card reveal"
+      data-category="campaign"
+    >
+
+      <button
+        type="button"
+        class="work-card-button project-open"
+        data-project="elevate"
+        aria-haspopup="dialog"
+      >
+
+        <div class="work-image">
+
+          <div
+            class="work-art art-elevate"
+            aria-hidden="true"
+          ></div>
+
+          <span class="work-view">
+            View
+          </span>
+
+        </div>
+
+
+        <div class="work-info">
+
+          <div>
+
+            <h3 class="work-name">
+
+              Elevate XV
+
+            </h3>
+
+            <div class="work-category">
+
+              Campaign /
+              Event Design
+
+            </div>
+
+          </div>
+
+
+          <span class="work-year">
+            2026
+          </span>
+
+        </div>
+
+      </button>
+
+    </article>
+
+
+    <!-- KINETIC -->
+
+    <article
+      class="work-card reveal"
+      data-category="motion digital"
+    >
+
+      <button
+        type="button"
+        class="work-card-button project-open"
+        data-project="motion"
+        aria-haspopup="dialog"
+      >
+
+        <div class="work-image">
+
+          <div
+            class="work-art art-motion"
+            aria-hidden="true"
+          ></div>
+
+          <span class="work-view">
+            View
+          </span>
+
+        </div>
+
+
+        <div class="work-info">
+
+          <div>
+
+            <h3 class="work-name">
+
+              Kinetic Worship
+
+            </h3>
+
+            <div class="work-category">
+
+              Motion /
+              Live Visuals
+
+            </div>
+
+          </div>
+
+
+          <span class="work-year">
+            2026
+          </span>
+
+        </div>
+
+      </button>
+
+    </article>
+
+
+    <!-- PORTGEAR -->
+
+    <article
+      class="work-card reveal"
+      data-category="branding"
+    >
+
+      <button
+        type="button"
+        class="work-card-button project-open"
+        data-project="portgear"
+        aria-haspopup="dialog"
+      >
+
+        <div class="work-image">
+
+          <div
+            class="work-art art-portgear"
+            aria-hidden="true"
+          ></div>
+
+          <span class="work-view">
+            View
+          </span>
+
+        </div>
+
+
+        <div class="work-info">
+
+          <div>
+
+            <h3 class="work-name">
+
+              Portgear
+
+            </h3>
+
+            <div class="work-category">
+
+              Brand Refresh /
+              Product Graphics
+
+            </div>
+
+          </div>
+
+
+          <span class="work-year">
+            2026
+          </span>
+
+        </div>
+
+      </button>
+
+    </article>
+
+
+    <!-- BIBLE COMIC -->
+
+    <article
+      class="work-card reveal"
+      data-category="illustration"
+    >
+
+      <button
+        type="button"
+        class="work-card-button project-open"
+        data-project="comic"
+        aria-haspopup="dialog"
+      >
+
+        <div class="work-image">
+
+          <div
+            class="work-art art-comic"
+            aria-hidden="true"
+          ></div>
+
+          <span class="work-view">
+            View
+          </span>
+
+        </div>
+
+
+        <div class="work-info">
+
+          <div>
+
+            <h3 class="work-name">
+
+              Biblical Stories
+
+            </h3>
+
+            <div class="work-category">
+
+              Illustration /
+              Sequential Art
+
+            </div>
+
+          </div>
+
+
+          <span class="work-year">
+            2026
+          </span>
+
+        </div>
+
+      </button>
+
+    </article>
+
+
+    <!-- JOLH -->
+
+    <article
+      class="work-card reveal"
+      data-category="campaign"
+    >
+
+      <button
+        type="button"
+        class="work-card-button project-open"
+        data-project="jolh"
+        aria-haspopup="dialog"
+      >
+
+        <div class="work-image">
+
+          <div
+            class="work-art art-jolh"
+            aria-hidden="true"
+          ></div>
+
+          <span class="work-view">
+            View
+          </span>
+
+        </div>
+
+
+        <div class="work-info">
+
+          <div>
+
+            <h3 class="work-name">
+
+              JOLH Creative
+
+            </h3>
+
+            <div class="work-category">
+
+              Campaign /
+              Event Graphics
+
+            </div>
+
+          </div>
+
+
+          <span class="work-year">
+            2026
+          </span>
+
+        </div>
+
+      </button>
+
+    </article>
+
+
+    <!-- CONTROLLER -->
+
+    <article
+      class="work-card reveal"
+      data-category="digital motion"
+    >
+
+      <button
+        type="button"
+        class="work-card-button project-open"
+        data-project="controller"
+        aria-haspopup="dialog"
+      >
+
+        <div class="work-image">
+
+          <div
+            class="work-art art-controller"
+            aria-hidden="true"
+          ></div>
+
+          <span class="work-view">
+            View
+          </span>
+
+        </div>
+
+
+        <div class="work-info">
+
+          <div>
+
+            <h3 class="work-name">
+
+              RGEN Lyric Controller
+
+            </h3>
+
+            <div class="work-category">
+
+              Interactive /
+              Live Visual System
+
+            </div>
+
+          </div>
+
+
+          <span class="work-year">
+            2026
+          </span>
+
+        </div>
+
+      </button>
+
+    </article>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     EXPERIENCE
+====================================================== -->
+
+<section
+  class="section"
+  id="experience"
+>
+
+<div class="container">
+
+
+  <header class="section-header">
+
+
+    <div class="eyebrow muted reveal">
+
+      03 / Experience
+
+    </div>
+
+
+    <h2 class="section-title reveal">
+
+      Design beyond<br>
+      the portfolio.
+
+    </h2>
+
+  </header>
+
+
+  <div class="experience-list">
+
+
+    <!--
+      Replace Company Name with
+      your real employer.
+    -->
+
+    <article class="experience-row reveal">
+
+
+      <div class="experience-date">
+
+        2025 — 2026
+
+      </div>
+
+
+      <div>
+
+        <h3 class="experience-role">
+
+          Graphic Designer
+
+        </h3>
+
+
+        <div class="experience-company">
+
+          Company Name
+
+        </div>
+
+      </div>
+
+
+      <p class="experience-copy">
+
+        Professional graphic design work
+        across marketing materials, product
+        visuals, promotional layouts and
+        production-ready creative assets,
+        balancing visual consistency with
+        practical business requirements.
+
+      </p>
+
+    </article>
+
+
+    <article class="experience-row reveal">
+
+
+      <div class="experience-date">
+
+        Ongoing
+
+      </div>
+
+
+      <div>
+
+        <h3 class="experience-role">
+
+          Creative & Media
+
+        </h3>
+
+
+        <div class="experience-company">
+
+          Independent /
+          Community Projects
+
+        </div>
+
+      </div>
+
+
+      <p class="experience-copy">
+
+        Visual identities, campaigns,
+        event graphics, motion design,
+        live visual systems, illustration
+        and collaborative creative work
+        across different formats and
+        audiences.
+
+      </p>
+
+    </article>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     ABOUT
+====================================================== -->
+
+<section
+  class="section about-section"
+  id="about"
+>
+
+<div class="container about-grid">
+
+
+  <div class="eyebrow muted reveal">
+
+    04 / About
+
+  </div>
+
+
+  <div>
+
+
+    <h2 class="about-heading reveal">
+
+      I'm Syril Makilan—
+
+      <span>
+        Sy for short.
+      </span>
+
+      A graphic designer who enjoys
+      turning ideas into visual systems
+      people can understand, recognize
+      and remember.
+
+    </h2>
+
+
+    <div class="about-bottom">
+
+
+      <p class="about-copy reveal">
+
+        My work spans brand identity,
+        campaign design, print, digital
+        media, motion and illustration.
+
+        <br><br>
+
+        I enjoy projects where design
+        has a communication problem to
+        solve—not simply something that
+        needs to look good.
+
+        <br><br>
+
+        I'm interested in opportunities
+        where I can contribute ideas,
+        collaborate with a creative team
+        and continue developing both my
+        design thinking and craft.
+
+      </p>
+
+
+      <div class="about-info reveal">
+
+
+        <div class="about-row">
+
+          <span>
+            Name
+          </span>
+
+          <span>
+            Syril Makilan
+          </span>
+
+        </div>
+
+
+        <div class="about-row">
+
+          <span>
+            Based
+          </span>
+
+          <span>
+            Philippines
+          </span>
+
+        </div>
+
+
+        <div class="about-row">
+
+          <span>
+            Discipline
+          </span>
+
+          <span>
+            Graphic / Visual Design
+          </span>
+
+        </div>
+
+
+        <div class="about-row">
+
+          <span>
+            Focus
+          </span>
+
+          <span>
+            Brand / Campaign /
+            Motion / Digital
+          </span>
+
+        </div>
+
+
+        <div class="about-row">
+
+          <span>
+            Availability
+          </span>
+
+          <span>
+            Open to opportunities
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="capabilities reveal">
+
+
+      <div class="eyebrow muted">
+
+        Capabilities
+
+      </div>
+
+
+      <div class="capability-list">
+
+        <span class="capability">
+          Brand Identity
+        </span>
+
+        <span class="capability">
+          Logo Design
+        </span>
+
+        <span class="capability">
+          Campaign Design
+        </span>
+
+        <span class="capability">
+          Social Media
+        </span>
+
+        <span class="capability">
+          Print Design
+        </span>
+
+        <span class="capability">
+          Motion
+        </span>
+
+        <span class="capability">
+          Kinetic Typography
+        </span>
+
+        <span class="capability">
+          Illustration
+        </span>
+
+        <span class="capability">
+          Digital Design
+        </span>
+
+        <span class="capability">
+          HTML / CSS / JS
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     CONTACT
+====================================================== -->
+
+<section
+  class="section contact"
+  id="contact"
+>
+
+<div
+  class="container"
+  style="width:100%;"
+>
+
+
+  <div class="eyebrow muted reveal">
+
+    05 / Contact
+
+  </div>
+
+
+  <p class="contact-copy reveal">
+
+    Looking for a graphic designer
+    for your team or have a project
+    worth building together?
+    I'd love to hear about it.
+
+  </p>
+
+
+  <h2 class="contact-title reveal">
+
+    LET'S WORK
+
+    <br>
+
+    <span class="contact-outline">
+
+      TOGETHER
+
+    </span>
+
+    <span class="accent">.</span>
+
+  </h2>
+
+
+  <div class="contact-actions reveal">
+
+
+    <!-- REPLACE WITH REAL EMAIL -->
+
+    <a
+      href="mailto:hello@example.com"
+      class="button button-accent"
+    >
+      Email me ↗
+    </a>
+
+
+    <!-- REPLACE # WITH REAL LINKS -->
+
+    <a
+      href="#"
+      class="button"
+    >
+      LinkedIn ↗
+    </a>
+
+
+    <a
+      href="#"
+      class="button"
+    >
+      Behance ↗
+    </a>
+
+
+    <a
+      href="resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="button"
+    >
+      Résumé ↗
+    </a>
+
+  </div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer class="footer">
+
+<div class="container footer-inner">
+
+
+  <div>
+
+    ©
+    <span id="year"></span>
+
+    Syril Makilan
+
+  </div>
+
+
+  <div class="footer-center">
+
+    Graphic Designer /
+    Philippines
+
+  </div>
+
+
+  <div class="footer-right">
+
+    <a href="#work">
+      Work
+    </a>
+
+    <a href="#home">
+      Top ↑
+    </a>
+
+  </div>
+
+</div>
+
+</footer>
+
+
+<!-- ======================================================
+     CASE STUDY
+====================================================== -->
+
+<div
+  class="case-modal"
+  id="caseModal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="caseTitle"
+  aria-hidden="true"
+>
+
+
+  <div class="container case-nav">
+
+
+    <div class="logo">
+
+      SY<span class="logo-dot">.</span>
+
+    </div>
+
+
+    <button
+      type="button"
+      class="case-close"
+      id="caseClose"
+    >
+      Close ×
+    </button>
+
+  </div>
+
+
+  <div class="container case-hero">
+
+
+    <div class="eyebrow muted">
+
+      Selected Project /
+      Syril Makilan
+
+    </div>
+
+
+    <h2
+      class="case-title"
+      id="caseTitle"
+    >
+      Project
+    </h2>
+
+
+    <div class="case-meta">
+
+
+      <div class="case-meta-item">
+
+        Discipline
+
+        <br>
+
+        <span id="caseCategory">
+          Design
+        </span>
+
+      </div>
+
+
+      <div class="case-meta-item">
+
+        Year
+
+        <br>
+
+        <span id="caseYear">
+          2026
+        </span>
+
+      </div>
+
+
+      <div class="case-meta-item">
+
+        Role
+
+        <br>
+
+        <span>
+          Graphic Designer
+        </span>
+
+      </div>
+
+
+      <div class="case-meta-item">
+
+        Responsibilities
+
+        <br>
+
+        <span id="caseResponsibilities">
+          Design
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div
+    class="case-cover"
+    id="caseCover"
+  ></div>
+
+
+  <section class="case-content">
+
+  <div class="container">
+
+
+    <div class="case-grid">
+
+
+      <div class="eyebrow muted">
+
+        Overview
+
+      </div>
+
+
+      <div>
+
+
+        <p
+          class="case-overview"
+          id="caseOverview"
+        ></p>
+
+
+        <div class="case-columns">
+
+
+          <div class="case-block">
+
+            <h3>
+              The Challenge
+            </h3>
+
+            <p id="caseChallenge">
+            </p>
+
+          </div>
+
+
+          <div class="case-block">
+
+            <h3>
+              The Approach
+            </h3>
+
+            <p id="caseApproach">
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="case-gallery">
+
+
+      <div class="gallery-grid">
+
+
+        <div class="gallery-placeholder">
+
+          Process /
+          Exploration
+
+        </div>
+
+
+        <div class="gallery-placeholder">
+
+          Design System /
+          Details
+
+        </div>
+
+
+        <div class="gallery-placeholder wide">
+
+          Final Application /
+          Hero Mockup
+
+        </div>
+
+
+        <div class="gallery-placeholder">
+
+          Application /
+          Detail
+
+        </div>
+
+
+        <div class="gallery-placeholder">
+
+          Application /
+          Detail
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  </section>
+
+</div>
+
+
+<script>
+
+/* =========================================================
+   ELEMENTS
+========================================================= */
+
+const body =
+  document.body;
+
+
+const navbar =
+  document.getElementById(
+    "navbar"
+  );
+
+
+const menuButton =
+  document.getElementById(
+    "menuButton"
+  );
+
+
+const mobileMenu =
+  document.getElementById(
+    "mobileMenu"
+  );
+
+
+const themeButton =
+  document.getElementById(
+    "themeButton"
+  );
+
+
+const cursor =
+  document.getElementById(
+    "cursor"
+  );
+
+
+const preview =
+  document.getElementById(
+    "disciplinePreview"
+  );
+
+
+const previewArt =
+  document.getElementById(
+    "previewArt"
+  );
+
+
+const caseModal =
+  document.getElementById(
+    "caseModal"
+  );
+
+
+const caseClose =
+  document.getElementById(
+    "caseClose"
+  );
+
+
+const caseTitle =
+  document.getElementById(
+    "caseTitle"
+  );
+
+
+const caseCategory =
+  document.getElementById(
+    "caseCategory"
+  );
+
+
+const caseYear =
+  document.getElementById(
+    "caseYear"
+  );
+
+
+const caseResponsibilities =
+  document.getElementById(
+    "caseResponsibilities"
+  );
+
+
+const caseCover =
+  document.getElementById(
+    "caseCover"
+  );
+
+
+const caseOverview =
+  document.getElementById(
+    "caseOverview"
+  );
+
+
+const caseChallenge =
+  document.getElementById(
+    "caseChallenge"
+  );
+
+
+const caseApproach =
+  document.getElementById(
+    "caseApproach"
+  );
+
+
+let menuOpen =
+  false;
+
+
+let lastFocusedElement =
+  null;
+
+
+/* =========================================================
+   YEAR
+========================================================= */
+
+document.getElementById(
+  "year"
+).textContent =
+  new Date().getFullYear();
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+function updateNavbar() {
+
+  navbar.classList.toggle(
+    "scrolled",
+    window.scrollY > 25
+  );
+
+}
+
+
+updateNavbar();
+
+
+window.addEventListener(
+  "scroll",
+  updateNavbar,
+  {
+    passive: true
+  }
+);
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+function openMenu() {
+
+  menuOpen = true;
+
+
+  mobileMenu.classList.add(
+    "open"
+  );
+
+
+  mobileMenu.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+
+  menuButton.setAttribute(
+    "aria-expanded",
+    "true"
+  );
+
+
+  menuButton.textContent =
+    "Close";
+
+
+  body.classList.add(
+    "no-scroll"
+  );
+
+}
+
+
+function closeMenu() {
+
+  menuOpen = false;
+
+
+  mobileMenu.classList.remove(
+    "open"
+  );
+
+
+  mobileMenu.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+
+  menuButton.setAttribute(
+    "aria-expanded",
+    "false"
+  );
+
+
+  menuButton.textContent =
+    "Menu";
+
+
+  if (
+    !caseModal.classList.contains(
+      "open"
+    )
+  ) {
+
+    body.classList.remove(
+      "no-scroll"
+    );
+
+  }
+
+}
+
+
+menuButton.addEventListener(
+  "click",
+  () => {
+
+    if (menuOpen) {
+
+      closeMenu();
+
+    } else {
+
+      openMenu();
+
+    }
+
+  }
+);
+
+
+document
+.querySelectorAll(
+  ".mobile-links a"
+)
+.forEach(link => {
+
+  link.addEventListener(
+    "click",
+    closeMenu
+  );
+
+});
+
+
+/* =========================================================
+   THEME
+========================================================= */
+
+const savedTheme =
+  localStorage.getItem(
+    "sy-theme"
+  );
+
+
+if (
+  savedTheme === "dark"
+) {
+
+  body.classList.add(
+    "dark"
+  );
+
+}
+
+
+function updateThemeLabel() {
+
+  themeButton.setAttribute(
+
+    "aria-label",
+
+    body.classList.contains(
+      "dark"
+    )
+
+      ? "Switch to light mode"
+
+      : "Switch to dark mode"
+
+  );
+
+}
+
+
+updateThemeLabel();
+
+
+themeButton.addEventListener(
+  "click",
+  () => {
+
+    body.classList.toggle(
+      "dark"
+    );
+
+
+    localStorage.setItem(
+
+      "sy-theme",
+
+      body.classList.contains(
+        "dark"
+      )
+
+        ? "dark"
+
+        : "light"
+
+    );
+
+
+    updateThemeLabel();
+
+  }
+);
+
+
+/* =========================================================
+   CUSTOM CURSOR
+========================================================= */
+
+const finePointer =
+  window.matchMedia(
+    "(pointer: fine) and (hover: hover)"
+  );
+
+
+if (
+  finePointer.matches
+) {
+
+  let mouseX = 0;
+
+  let mouseY = 0;
+
+  let cursorX = 0;
+
+  let cursorY = 0;
+
+
+  window.addEventListener(
+    "mousemove",
+    event => {
+
+      mouseX =
+        event.clientX;
+
+      mouseY =
+        event.clientY;
+
+
+      body.classList.add(
+        "cursor-ready"
+      );
+
+
+      cursor.classList.add(
+        "visible"
+      );
+
+    }
+  );
+
+
+  function animateCursor() {
+
+    cursorX +=
+      (mouseX - cursorX)
+      * .18;
+
+    cursorY +=
+      (mouseY - cursorY)
+      * .18;
+
+
+    cursor.style.left =
+      `${cursorX}px`;
+
+    cursor.style.top =
+      `${cursorY}px`;
+
+
+    requestAnimationFrame(
+      animateCursor
+    );
+
+  }
+
+
+  animateCursor();
+
+
+  document
+  .querySelectorAll(
+    "a, button"
+  )
+  .forEach(element => {
+
+    element.addEventListener(
+      "mouseenter",
+      () => {
+
+        cursor.classList.add(
+          "active"
+        );
+
+      }
+    );
+
+
+    element.addEventListener(
+      "mouseleave",
+      () => {
+
+        cursor.classList.remove(
+          "active"
+        );
+
+      }
+    );
+
+  });
+
+}
+
+
+/* =========================================================
+   REVEALS
+========================================================= */
+
+const reduceMotion =
+  window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+
+if (
+  reduceMotion
+) {
+
+  document
+  .querySelectorAll(
+    ".reveal"
+  )
+  .forEach(element => {
+
+    element.classList.add(
+      "visible"
+    );
+
+  });
+
+} else {
+
+  const revealObserver =
+    new IntersectionObserver(
+
+      entries => {
+
+        entries.forEach(
+          entry => {
+
+            if (
+              entry.isIntersecting
+            ) {
+
+              entry.target
+              .classList.add(
+                "visible"
+              );
+
+
+              revealObserver
+              .unobserve(
+                entry.target
+              );
+
+            }
+
+          }
+        );
+
+      },
+
+      {
+        threshold: .08
+      }
+
+    );
+
+
+  document
+  .querySelectorAll(
+    ".reveal"
+  )
+  .forEach(element => {
+
+    revealObserver.observe(
+      element
+    );
+
+  });
+
+}
+
+
+/* =========================================================
+   DISCIPLINE PREVIEW
+========================================================= */
+
+const previewClasses = {
+
+  branding:
+    "preview-branding",
+
+  campaign:
+    "preview-campaign",
+
+  motion:
+    "preview-motion",
+
+  illustration:
+    "preview-illustration",
+
+  digital:
+    "preview-digital"
+
+};
+
+
+document
+.querySelectorAll(
+  ".discipline-row"
+)
+.forEach(row => {
+
+
+  row.addEventListener(
+    "mouseenter",
+    () => {
+
+      if (
+        !finePointer.matches
+      ) {
+
+        return;
+
+      }
+
+
+      const type =
+        row.dataset.preview;
+
+
+      previewArt.className =
+        `preview-art ${previewClasses[type]}`;
+
+
+      preview.classList.add(
+        "visible"
+      );
+
+    }
+  );
+
+
+  row.addEventListener(
+    "mouseleave",
+    () => {
+
+      preview.classList.remove(
+        "visible"
+      );
+
+    }
+  );
+
+
+  row.addEventListener(
+    "mousemove",
+    event => {
+
+      preview.style.left =
+        `${event.clientX}px`;
+
+      preview.style.top =
+        `${event.clientY}px`;
+
+    }
+  );
+
+
+  row.addEventListener(
+    "click",
+    () => {
+
+      const category =
+        row.dataset.filterTarget;
+
+
+      applyFilter(
+        category
+      );
+
+
+      document
+      .getElementById(
+        "work"
+      )
+      .scrollIntoView(
+        {
+          behavior:
+            reduceMotion
+              ? "auto"
+              : "smooth"
+        }
+      );
+
+    }
+  );
+
+});
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+const filters =
+  document.querySelectorAll(
+    ".filter"
+  );
+
+
+const workCards =
+  document.querySelectorAll(
+    ".work-card"
+  );
+
+
+function applyFilter(
+  category
+) {
+
+  filters.forEach(
+    filter => {
+
+      filter.classList.toggle(
+
+        "active",
+
+        filter.dataset.filter ===
+        category
+
+      );
+
+    }
+  );
+
+
+  workCards.forEach(
+    card => {
+
+      const categories =
+        card.dataset.category
+        .split(" ");
+
+
+      const show =
+        category === "all" ||
+        categories.includes(
+          category
+        );
+
+
+      card.classList.toggle(
+        "hidden",
+        !show
+      );
+
+    }
+  );
+
+}
+
+
+filters.forEach(
+  filter => {
+
+    filter.addEventListener(
+      "click",
+      () => {
+
+        applyFilter(
+          filter.dataset.filter
+        );
+
+      }
+    );
+
+  }
+);
+
+
+/* =========================================================
+   PROJECT DATA
+========================================================= */
+
+const projectData = {
+
+
+  fhm: {
+
+    title:
+      "Faith & Hope Movers",
+
+    category:
+      "Brand Identity",
+
+    year:
+      "2026",
+
+    responsibilities:
+      "Logo / Identity / Typography",
+
+    art:
+      "art-fhm",
+
+    overview:
+      "A visual identity for a dance ministry built around movement, faith and community, designed to remain contemporary and inclusive rather than being limited to one type of performer.",
+
+    challenge:
+      "The identity needed to communicate movement and energy while remaining recognizable across event graphics, apparel and digital applications.",
+
+    approach:
+      "I explored simplified forms, strong typography and movement-driven compositions, then developed the strongest direction into a flexible visual language."
+
+  },
+
+
+  elevate: {
+
+    title:
+      "Elevate XV",
+
+    category:
+      "Campaign Design",
+
+    year:
+      "2026",
+
+    responsibilities:
+      "Campaign / Print / Digital",
+
+    art:
+      "art-elevate",
+
+    overview:
+      "A visual campaign created around the theme Elevate for a 15th anniversary celebration, combining the event theme with the Roman numeral XV.",
+
+    challenge:
+      "The anniversary milestone needed to remain visible without competing with the primary Elevate message across posters, large-format graphics and digital assets.",
+
+    approach:
+      "I integrated XV directly into the visual language and used scale, typography and hierarchy to create a system that could adapt across different event formats."
+
+  },
+
+
+  motion: {
+
+    title:
+      "Kinetic Worship",
+
+    category:
+      "Motion Design",
+
+    year:
+      "2026",
+
+    responsibilities:
+      "Motion / Typography / Interaction",
+
+    art:
+      "art-motion",
+
+    overview:
+      "A live-controlled kinetic typography system exploring how worship lyrics can become part of the visual experience rather than remaining static presentation text.",
+
+    challenge:
+      "The design needed expressive animation while preserving readability and giving the live operator direct control over when each lyric appears.",
+
+    approach:
+      "I combined custom HTML, CSS and JavaScript animation with keyboard-driven live controls, allowing individual lyric moments to receive unique motion treatments."
+
+  },
+
+
+  portgear: {
+
+    title:
+      "Portgear",
+
+    category:
+      "Brand Refresh",
+
+    year:
+      "2026",
+
+    responsibilities:
+      "Branding / Logo / Product",
+
+    art:
+      "art-portgear",
+
+    overview:
+      "A brand refresh exploration for a bags and luggage manufacturer focused on strengthening the visual relationship between the brand, travel and mobility.",
+
+    challenge:
+      "The identity already had recognition, so the goal was to modernize its visual direction without unnecessarily removing familiar characteristics.",
+
+    approach:
+      "I retained typographic familiarity while exploring symbols and graphic ideas inspired by luggage, movement and travel."
+
+  },
+
+
+  comic: {
+
+    title:
+      "Biblical Stories",
+
+    category:
+      "Illustration",
+
+    year:
+      "2026",
+
+    responsibilities:
+      "Illustration / Color / Continuity",
+
+    art:
+      "art-comic",
+
+    overview:
+      "A continuing sequential-art project translating biblical scenes into approachable modern comic illustrations while maintaining visual consistency across characters, environments and pages.",
+
+    challenge:
+      "Recurring characters, clothing, environments and color decisions needed to remain recognizable from panel to panel while supporting the emotional tone of each scene.",
+
+    approach:
+      "I developed consistent character palettes, warm environmental colors and inked comic rendering while refining individual panels to maintain continuity throughout the project."
+
+  },
+
+
+  jolh: {
+
+    title:
+      "JOLH Creative",
+
+    category:
+      "Campaign Design",
+
+    year:
+      "2026",
+
+    responsibilities:
+      "Campaign / Event / Print",
+
+    art:
+      "art-jolh",
+
+    overview:
+      "A collection of visual communication created for events, service schedules, large-format materials and digital media.",
+
+    challenge:
+      "Information-heavy materials needed to remain readable from different distances and across formats while still feeling visually connected.",
+
+    approach:
+      "I used clear hierarchy, consistent typography and scalable compositions to adapt visual communication across print, screens and event environments."
+
+  },
+
+
+  controller: {
+
+    title:
+      "RGEN Lyric Controller",
+
+    category:
+      "Web & Interactive",
+
+    year:
+      "2026",
+
+    responsibilities:
+      "UI / Interaction / Creative Development",
+
+    art:
+      "art-controller",
+
+    overview:
+      "An evolving browser-based live lyric and media controller designed around the practical needs of live presentation and kinetic typography workflows.",
+
+    challenge:
+      "The interface needed to give operators quick access to lyrics, media and presentation controls without making the live workflow confusing or visually overwhelming.",
+
+    approach:
+      "I combined interface design with HTML, CSS and JavaScript to explore a workflow inspired by live presentation software while adapting it specifically for kinetic lyric control."
+
+  }
+
+};
+
+
+/* =========================================================
+   CASE STUDY
+========================================================= */
+
+function getFocusableElements(
+  container
+) {
+
+  return Array.from(
+
+    container.querySelectorAll(
+
+      'a[href], button:not([disabled]), input, textarea, select, [tabindex]:not([tabindex="-1"])'
+
+    )
+
+  ).filter(
+
+    element =>
+
+      element.offsetWidth > 0 ||
+      element.offsetHeight > 0
+
+  );
+
+}
+
+
+function openProject(
+  projectId,
+  trigger
+) {
+
+  const data =
+    projectData[
+      projectId
+    ];
+
+
+  if (!data) {
+
+    return;
+
+  }
+
+
+  lastFocusedElement =
+    trigger;
+
+
+  caseTitle.textContent =
+    data.title;
+
+
+  caseCategory.textContent =
+    data.category;
+
+
+  caseYear.textContent =
+    data.year;
+
+
+  caseResponsibilities.textContent =
+    data.responsibilities;
+
+
+  caseOverview.textContent =
+    data.overview;
+
+
+  caseChallenge.textContent =
+    data.challenge;
+
+
+  caseApproach.textContent =
+    data.approach;
+
+
+  caseCover.innerHTML =
+    `
+      <div
+        class="work-art ${data.art}"
+        aria-hidden="true"
+      ></div>
+    `;
+
+
+  caseModal.classList.add(
+    "open"
+  );
+
+
+  caseModal.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+
+  body.classList.add(
+    "no-scroll"
+  );
+
+
+  caseModal.scrollTop =
+    0;
+
+
+  setTimeout(
+    () => {
+
+      caseClose.focus();
+
+    },
+    100
+  );
+
+}
+
+
+function closeProject() {
+
+  caseModal.classList.remove(
+    "open"
+  );
+
+
+  caseModal.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+
+  if (!menuOpen) {
+
+    body.classList.remove(
+      "no-scroll"
+    );
+
+  }
+
+
+  if (
+    lastFocusedElement
+  ) {
+
+    setTimeout(
+      () => {
+
+        lastFocusedElement.focus();
+
+      },
+      50
+    );
+
+  }
+
+}
+
+
+document
+.querySelectorAll(
+  ".project-open"
+)
+.forEach(button => {
+
+  button.addEventListener(
+    "click",
+    () => {
+
+      openProject(
+        button.dataset.project,
+        button
+      );
+
+    }
+  );
+
+});
+
+
+caseClose.addEventListener(
+  "click",
+  closeProject
+);
+
+
+/* =========================================================
+   KEYBOARD
+========================================================= */
+
+document.addEventListener(
+  "keydown",
+  event => {
+
+
+    if (
+      event.key === "Escape"
+    ) {
+
+
+      if (
+        caseModal.classList.contains(
+          "open"
+        )
+      ) {
+
+        closeProject();
+
+        return;
+
+      }
+
+
+      if (
+        menuOpen
+      ) {
+
+        closeMenu();
+
+        menuButton.focus();
+
+      }
+
+    }
+
+
+    if (
+      event.key === "Tab" &&
+      caseModal.classList.contains(
+        "open"
+      )
+    ) {
+
+      const focusable =
+        getFocusableElements(
+          caseModal
+        );
+
+
+      if (
+        !focusable.length
+      ) {
+
+        return;
+
+      }
+
+
+      const first =
+        focusable[0];
+
+
+      const last =
+        focusable[
+          focusable.length - 1
+        ];
+
+
+      if (
+        event.shiftKey &&
+        document.activeElement ===
+        first
+      ) {
+
+        event.preventDefault();
+
+        last.focus();
+
+      }
+
+
+      else if (
+        !event.shiftKey &&
+        document.activeElement ===
+        last
+      ) {
+
+        event.preventDefault();
+
+        first.focus();
+
+      }
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   RESIZE
+========================================================= */
+
+window.addEventListener(
+  "resize",
+  () => {
+
+    if (
+      window.innerWidth > 1000 &&
+      menuOpen
+    ) {
+
+      closeMenu();
+
+    }
+
+  }
+);
+
+</script>
+
+</body>
+
+</html>
